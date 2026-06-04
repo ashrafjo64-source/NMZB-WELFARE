@@ -269,7 +269,9 @@ form textarea {
 
 .rating {
   display: flex;
-  gap: 12px;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 10px;
   margin-bottom: 30px;
 }
 
@@ -277,17 +279,19 @@ form textarea {
   display: none;
 }
 
-.rating input + label {
-  font-size: 1.5rem;
+.rating label {
+  font-size: 2rem;
   cursor: pointer;
   color: #d8c8cc;
+  transition: color 0.15s ease;
 }
 
-.rating input:checked + label,
+.rating input:checked ~ label,
 .rating label:hover,
 .rating label:hover ~ label {
   color: #e5819f;
 }
+
 
 textarea {
   min-height: 140px;
