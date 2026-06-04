@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NMZB Welfare | Insurance Feedback</title>
+
+<link rel="stylesheet" href="main.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<nav>
+    <div class="logo">
+        <img src="LOGO.jpeg" alt="NMZB Welfare logo">
+        <div>
+            <strong>NMZB Welfare</strong>
+            <span>Life Insurance</span>
+        </div>
+    </div>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Promotion Banner -->
+
+<div class="announcement">
+
+<div class="scroll-text">
+
+🎉 LIMITED PROMOTION 🎉
+Get 20% OFF Family Insurance Plans |
+Free Annual Health Screening |
+Cashless Hospital Admission |
+24/7 Customer Support |
+Protect Your Loved Ones Today!
+
+</div>
+
+</div>
+
+<!-- Hero Section -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Customer Care with Confidence</h1>
+
+<p>
+Share your feedback to help NMZB Welfare improve
+plan quality, service reliability, and customer support.
+</p>
+
+<button onclick="document.getElementById('feedback').scrollIntoView({ behavior: 'smooth' })">Give Feedback</button>
+
+</div>
+
+</section>
+
+<!-- Benefits -->
+
+<section class="benefits" id="benefits">
+
+<h2>Why Choose NMZB Welfare?</h2>
+
+<div class="card-container">
+
+<div class="card">
+<i class="fa-solid fa-heart-pulse"></i>
+<h3>Medical Coverage</h3>
+<p>Cashless admission and specialist treatment.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-user-doctor"></i>
+<h3>Expert Support</h3>
+<p>Professional assistance whenever you need it.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-file-circle-check"></i>
+<h3>Fast Claims</h3>
+<p>Quick and transparent claim approval process.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-people-roof"></i>
+<h3>Family Protection</h3>
+<p>Affordable plans for every family member.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Statistics -->
+
+<section class="stats">
+
+<div class="stat-box">
+<h2>10,000+</h2>
+<p>Happy Customers</p>
+</div>
+
+<div class="stat-box">
+<h2>98%</h2>
+<p>Claim Approval</p>
+</div>
+
+<div class="stat-box">
+<h2>24/7</h2>
+<p>Customer Support</p>
+</div>
+
+<div class="stat-box">
+<h2>15+</h2>
+<p>Years Experience</p>
+</div>
+
+</section>
+
+<!-- Family Wellness -->
+
+<section class="wellness">
+
+<h2>Supporting Family Wellness</h2>
+
+<div class="wellness-container">
+
+<div class="wellness-card">
+❤️ Health Protection
+</div>
+
+<div class="wellness-card">
+🏥 Medical Care
+</div>
+
+<div class="wellness-card">
+👨‍👩‍👧 Family Security
+</div>
+
+<div class="wellness-card">
+🌿 Wellness Rewards
+</div>
+
+</div>
+
+</section>
+
+<!-- Testimonials -->
+
+<section class="testimonials">
+
+<h2>Customer Testimonials</h2>
+
+<div id="testimonial">
+
+★★★★★ <br>
+"Excellent service and very affordable insurance."
+
+</div>
+
+</section>
+
+<!-- Feedback Form -->
+
+<section id="feedback">
+
+<h2>Customer Feedback</h2>
+<p class="section-intro">Your input helps us deliver better insurance plans, faster claims, and friendlier service.</p>
+
+<form action="submit_feedback.php" method="POST">
+
+<input type="text"
+name="customer_name"
+placeholder="Enter Your Name"
+required>
+
+<h3>Medical Card Benefits</h3>
+
+<div class="rating">
+  <label><input type="radio" name="medical" value="5"><span>⭐</span></label>
+  <label><input type="radio" name="medical" value="4"><span>⭐</span></label>
+  <label><input type="radio" name="medical" value="3"><span>⭐</span></label>
+  <label><input type="radio" name="medical" value="2"><span>⭐</span></label>
+  <label><input type="radio" name="medical" value="1"><span>⭐</span></label>
+</div>
+
+<h3>Customer Service</h3>
+
+<div class="rating">
+  <label><input type="radio" name="service" value="5"><span>⭐</span></label>
+  <label><input type="radio" name="service" value="4"><span>⭐</span></label>
+  <label><input type="radio" name="service" value="3"><span>⭐</span></label>
+  <label><input type="radio" name="service" value="2"><span>⭐</span></label>
+  <label><input type="radio" name="service" value="1"><span>⭐</span></label>
+</div>
+
+<h3>Claim Processing</h3>
+
+<div class="rating">
+  <label><input type="radio" name="claim" value="5"><span>⭐</span></label>
+  <label><input type="radio" name="claim" value="4"><span>⭐</span></label>
+  <label><input type="radio" name="claim" value="3"><span>⭐</span></label>
+  <label><input type="radio" name="claim" value="2"><span>⭐</span></label>
+  <label><input type="radio" name="claim" value="1"><span>⭐</span></label>
+</div>
+
+<textarea
+name="comments"
+placeholder="Leave your feedback here..."
+rows="5"></textarea>
+
+<button type="submit">
+Submit Feedback
+</button>
+
+</form>
+
+</section>
+
+<script src="main.js"></script>
+
+</body>
+</html>
